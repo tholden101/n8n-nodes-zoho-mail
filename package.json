@@ -14,22 +14,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      {
-        "name": "ZohoMailOAuth2Api",
-        "type": "credentials",
-        "files": [
-          "dist/credentials/ZohoMailOAuth2Api.credentials.js"
-        ]
-      }
+      "dist/credentials/ZohoMailOAuth2Api.credentials.js"
     ],
     "nodes": [
-      {
-        "name": "ZohoMail",
-        "type": "node",
-        "files": [
-          "dist/nodes/ZohoMail/ZohoMail.node.js"
-        ]
-      }
+      "dist/nodes/ZohoMail/ZohoMail.node.js"
     ]
   },
   "scripts": {
@@ -50,5 +38,12 @@
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "LICENSE",
+    "LICENSE.md",
+    "README.md",
+    "dist",
+    "nodes/ZohoMail/zohoMail.svg"
+  ]
 }
