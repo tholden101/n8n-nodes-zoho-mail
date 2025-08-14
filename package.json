@@ -18,7 +18,7 @@
         "name": "ZohoMailOAuth2Api",
         "type": "credentials",
         "files": [
-          "credentials/ZohoMailOAuth2Api.credentials.ts"
+          "dist/credentials/ZohoMailOAuth2Api.credentials.js"
         ]
       }
     ],
@@ -27,7 +27,7 @@
         "name": "ZohoMail",
         "type": "node",
         "files": [
-          "nodes/ZohoMail/ZohoMail.node.ts"
+          "dist/nodes/ZohoMail/ZohoMail.node.js"
         ]
       }
     ]
