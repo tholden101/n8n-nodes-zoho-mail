@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+htps://github.com/tholden101/n8n-nodes-zoho-mail.git"
+    "url": "git+https://github.com/tholden101/n8n-nodes-zoho-mail.git"
   },
   "n8n": {
     "n8nNodesApiVersion": 1,

@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ZohoMailOAuth2Api = void 0;
 class ZohoMailOAuth2Api {
     constructor() {
-        this.extends = ['oAuth2Api'];
         this.name = 'zohoMailOAuth2Api';
         this.displayName = 'Zoho Mail OAuth2 API';
+        this.extends = ['oAuth2Api'];
         this.documentationUrl = 'https://www.zoho.com/mail/help/api/';
         this.properties = [
             {
@@ -53,6 +53,13 @@ class ZohoMailOAuth2Api {
                 default: 'https://mail.zoho.com',
             },
         ];
+        // Verifies the credential by calling Zoho Mail Accounts API with the OAuth token
+        this.test = {
+            request: {
+                url: '={{$credentials.regionBaseUrl}}/api/accounts',
+                // method omitted → defaults to GET
+            },
+        };
     }
 }
 exports.ZohoMailOAuth2Api = ZohoMailOAuth2Api;

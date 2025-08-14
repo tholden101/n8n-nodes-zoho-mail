@@ -1,10 +1,11 @@
 import type { ICredentialType, INodeProperties } from 'n8n-workflow';
 
 export class ZohoMailOAuth2Api implements ICredentialType {
-	extends = ['oAuth2Api'];
 	name = 'zohoMailOAuth2Api';
 	displayName = 'Zoho Mail OAuth2 API';
+	extends = ['oAuth2Api'];
 	documentationUrl = 'https://www.zoho.com/mail/help/api/';
+
 	properties: INodeProperties[] = [
 		{
 			displayName: 'Auth URL',
@@ -52,4 +53,11 @@ export class ZohoMailOAuth2Api implements ICredentialType {
 		},
 	];
 
+	// Verifies the credential by calling Zoho Mail Accounts API with the OAuth token
+	test = {
+  request: {
+    url: '={{$credentials.regionBaseUrl}}/api/accounts',
+    // method omitted → defaults to GET
+  },
+ };
 }
