@@ -1,6 +1,6 @@
 {
   "name": "@tholden11/n8n-nodes-zoho-mail",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Zoho Mail (messages, attachments, accounts) node for n8n",
   "license": "MIT",
   "author": "Tom Holden tholden11@hotmail.com",
